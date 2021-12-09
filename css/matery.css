@@ -1299,7 +1299,7 @@ thead {
 
 .chip-container .chip-active {
     color: #FFF !important;
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FFC0CB 100%) !important;
+    background: linear-gradient(to bottom right, #FF5E3A 0%, #DB7093 100%) !important;
     box-shadow: 2px 5px 10px #aaa !important;
 }
 
@@ -1372,7 +1372,7 @@ thead {
 #cd-timeline .day {
     position: relative;
     padding: 8px 10px;
-    background-color: #FFC0CB;
+    background-color: #DB7093;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
@@ -1514,7 +1514,7 @@ thead {
     width: 14px;
     margin-left: 2px;
     margin-right: 2px;
-    border: 1px dashed #FFC0CB;
+    border: 1px dashed #DB7093;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1557,7 +1557,7 @@ thead {
         top: 24px;
         left: auto;
         right: 100%;
-        border-color: #FFC0CB;
+        border-color: #DB7093;
     }
 
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
@@ -1909,7 +1909,7 @@ p.search-result-summary{
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #E0EEEE 0%, #FFC0CB 100%);
+    background: linear-gradient(to bottom right, #E0EEEE 0%, #DB7093 100%);
     width: 48px;
     height: 48px;
 }
