@@ -4,8 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, LorrBlog">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="使用Valine为你的Hexo个人博客添加评论功能, LorrBlog">
+    <meta name="description" content="使用Valine为你的Hexo个人博客添加评论功能
+一个好的博客怎么能没有评论功能呢，拖了几天终于能把评论模块安排上了o(￣︶￣)o
+本文使用Valine在基于hexo搭建的个人博客上添加评论功能
+
+一、博客评论模块选择关于评论模块有很多选">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | LorrBlog</title>
+    <title>使用Valine为你的Hexo个人博客添加评论功能 | LorrBlog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -224,12 +228,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/blogimg/blog1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">使用Valine为你的Hexo个人博客添加评论功能</h1>
                 </div>
             </div>
         </div>
@@ -349,6 +353,14 @@
                                 <span class="chip bg-color">Hexo</span>
                             </a>
                         
+                            <a href="/tags/Valine/">
+                                <span class="chip bg-color">Valine</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">个人博客</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -370,7 +382,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-04
+                    2021-12-18
                 </div>
                 
 
@@ -394,19 +406,79 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="使用Valine为你的Hexo个人博客添加评论功能"><a href="#使用Valine为你的Hexo个人博客添加评论功能" class="headerlink" title="使用Valine为你的Hexo个人博客添加评论功能"></a>使用Valine为你的Hexo个人博客添加评论功能</h1><blockquote>
+<p>一个好的博客怎么能没有评论功能呢，拖了几天终于能把评论模块安排上了o(<em>￣︶￣</em>)o</p>
+<p>本文使用Valine在基于hexo搭建的个人博客上添加评论功能</p>
+</blockquote>
+<h2 id="一、博客评论模块选择"><a href="#一、博客评论模块选择" class="headerlink" title="一、博客评论模块选择"></a>一、博客评论模块选择</h2><p>关于评论模块有很多选择，因为博主也没有一一用过，只能通过网络搜索来寻找一个简单好用的，以下是一位博主对于一些评论模块的评价：</p>
+<blockquote>
+<ul>
+<li><strong>多说</strong> - 最多用户使用的评论，但遗憾2017年6月将暂定服务；不建议新用户使用，但为旧用户保留，也感谢多说一路的陪伴；（国内最大的也无了QAQ）</li>
+<li><strong>网易云跟帖</strong> - 网易提供的评论组件，功能比较简单，性能优秀；管理后台在查询上还不算特别智能，但足够普通用户使用；（这个也无了QAQ）</li>
+<li><strong>畅言</strong> - 搜狐提供的评论组件，功能丰富，体验优异；但必须进行域名备案。只要域名备过案就可以通过审核。（备案劝退QAQ）</li>
+<li><strong>Disqus</strong> - 国外使用较多的评论组件。万里长城永不倒，一枝红杏出墙来，你懂的。（博主的意思就是说被墙了QAQ）</li>
+</ul>
+<p>以上评论模块应该大家都知道，多说和网易云跟帖没有了，畅言要备案，对于对于挂靠在GitHub的博客非常的不友好，放弃！Disqus，不希望自己的博客，可以不分国界！也放弃！</p>
+<p>作者：iHTCboy<br>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57afa4844aaa">https://www.jianshu.com/p/57afa4844aaa</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+</blockquote>
+<p>这篇文章中的博主最终选择了基于GitHub的<code>gitment</code>，类似的还有<code>gitalk</code>。但这两个模块使用了权限过高的oauth，那么过高的权限会发生什么，只要看完下面这句话就能想到了：</p>
+<blockquote>
+<p><code>GitHub OAuth application</code>允许程序来操作你的github账户，可以对github中的仓库进行<strong>读写</strong></p>
+</blockquote>
+<p>这就相当于你将你所有的公共仓库授权给了评论者，删库跑路不在话下。也就是说拿到你的授权 Token 的人，可以将你的 GitHub 公共仓库删空（这是github权限分的不够细的锅），如果恶意攻击者想获取使用者的AccessToken，只需要在代码中加上一个 ajax 请求即可。（根据v2ex网友的评论，如果网站自行修改了 gitalk.js 脚本或者反代了github api，就很容易拿到你的 Token ）</p>
+<p>原贴地址：<a target="_blank" rel="noopener" href="https://www.v2ex.com/t/535608">https://www.v2ex.com/t/535608</a></p>
+<p>因此，在冲浪了一个早上并参观了无数前辈的博客后，以及各种踩坑安全问题之后，选择使用<code>Valine</code>模块为我的博客添加评论功能，这是一款基于LeanCloud开发的快速、简洁且高效的无后端评论系统，内置微博表情也可以自定义添加表情。当然，放弃了后端是有一些弊端的，不过估计也不会有几个评论，所以还是选择个稳当简单的。想要鱼和熊掌兼得就得看大佬自己发挥了_(:<em>」∠)</em> </p>
+<p>Valine中文文档：<a target="_blank" rel="noopener" href="https://valine.js.org/">https://valine.js.org</a></p>
+<p>这是Valine评论模块的效果：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211217150753371.png" alt="image-20211217150753371"></p>
+<h2 id="二、获取APP-ID和APP-Key"><a href="#二、获取APP-ID和APP-Key" class="headerlink" title="二、获取APP ID和APP Key"></a>二、获取APP ID和APP Key</h2><h3 id="2-1-注册-登录LeanCloud"><a href="#2-1-注册-登录LeanCloud" class="headerlink" title="2.1 注册/登录LeanCloud"></a>2.1 注册/登录LeanCloud</h3><p>LeanCloud控制台：<a target="_blank" rel="noopener" href="https://console.leancloud.cn/login?from=/apps">https://console.leancloud.cn/login?from=%2Fapps</a></p>
+<p>点击注册按钮，填写基本信息并绑定手机即可注册。（均需要填写真实的信息，后续都需要验证）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211218161846094.png" alt="image-20211218161846094"></p>
+<p>然后进入到以下界面，需要进行实名认证，我肯定是选择个人认证了。需要填写真实姓名和身份证号，然后使用支付宝扫脸，真的是很认真地在认证了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211218162228366.png" alt="image-20211218162228366"></p>
+<p>不过在注册时填了邮箱和手机，只验证了手机还没有验证邮箱，在进入到控制台后，还需要进行邮箱验证才能正常使用功能。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211218162821103.png" alt="image-20211218162821103"></p>
+<h3 id="2-2-创建应用"><a href="#2-2-创建应用" class="headerlink" title="2.2 创建应用"></a>2.2 创建应用</h3><p>进入<a target="_blank" rel="noopener" href="https://console.leancloud.cn/apps">控制台</a>后点击按钮<code>创建应用</code>，选择<code>开发版</code>，点击创建。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211218163137383.png" alt="image-20211218163137383"></p>
+<p>然后就获得了一个应用，点击进入该应用，选择左下角的<code>设置-&gt;应用凭证</code>，就能看到<code>APP ID</code>和<code>APP Key</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211218163445380.png" alt="image-20211218163445380"></p>
+<h2 id="三、应用到博客"><a href="#三、应用到博客" class="headerlink" title="三、应用到博客"></a>三、应用到博客</h2><p>通过以下语句可以将评论模块引用到博客中，需要填写上一步获得的<code>APP ID</code>和<code>APP Key</code>：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    ..
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>//unpkg.com/valine/dist/Valine.min.js<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    ...
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vcomments<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">new</span> <span class="token class-name">Valine</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+            el<span class="token operator">:</span> <span class="token string">'#vcomments'</span><span class="token punctuation">,</span>
+            appId<span class="token operator">:</span> <span class="token string">'Your appId'</span><span class="token punctuation">,</span>
+            appKey<span class="token operator">:</span> <span class="token string">'Your appKey'</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>因为博主是用基于hexo的主题进行开发的，可以直接在主题的配置文件<code>_config.yml</code>中填写相关参数：（主题为闪烁之狐大佬开发的<code>Matery</code>）</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">valine</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 是否开启</span>
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span> <span class="token comment"># APP_ID</span>
+  <span class="token key atrule">appKey</span><span class="token punctuation">:</span> <span class="token comment"># APP_KEY</span>
+  <span class="token key atrule">notify</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 已弃用可以删掉了</span>
+  <span class="token key atrule">verify</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 已弃用可以删掉了</span>
+  <span class="token key atrule">visitor</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 访客数量</span>
+  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> <span class="token string">'mm'</span> <span class="token comment"># 头像展示方式 Gravatar style : mm/identicon/monsterid/wavatar/retro/hide</span>
+  <span class="token key atrule">pageSize</span><span class="token punctuation">:</span> <span class="token number">10</span> <span class="token comment"># 一页显示的评论数</span>
+  <span class="token key atrule">placeholder</span><span class="token punctuation">:</span> <span class="token string">'just go go'</span> <span class="token comment"># 评论框占位文本</span>
+  <span class="token key atrule">background</span><span class="token punctuation">:</span> /medias/comment_bg.png <span class="token comment"># 评论框背景</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>更多配置项可以查看<a target="_blank" rel="noopener" href="https://valine.js.org/configuration.html">https://valine.js.org/configuration.html</a></p>
+<p>以上参数的效果图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211218174730304.png" alt="image-20211218174730304"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/06/19/hexo/matery-zhu-ti-valine-ping-lun-xi-tong/">https://fenghen0918.github.io/2020/06/19/hexo/matery-zhu-ti-valine-ping-lun-xi-tong/</a></p>
+<p><a target="_blank" rel="noopener" href="https://yafine-blog.cn/posts/4ab2.html">https://yafine-blog.cn/posts/4ab2.html</a></p>
+<h2 id="文章更新记录"><a href="#文章更新记录" class="headerlink" title="文章更新记录"></a>文章更新记录</h2><p>2021.12.18 文章完成并发布</p>
 
                 
             </div>
@@ -423,7 +495,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Other</a>
+                    <a href="/about" rel="external nofollow noreferrer">LorraineLai</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -433,7 +505,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/12/04/hello-world/">http://example.com/2021/12/04/hello-world/</a>
+                    <a href="http://example.com/2021/12/18/20211217-ping-lun-gong-neng-tian-jia/">http://example.com/2021/12/18/20211217-ping-lun-gong-neng-tian-jia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -446,7 +518,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Other</a>
+                    <a href="/about" target="_blank">LorraineLai</a>
                     !
                 </span>
             </div>
@@ -473,6 +545,14 @@
                             
                                 <a href="/tags/Hexo/">
                                     <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/Valine/">
+                                    <span class="chip bg-color">Valine</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">个人博客</span>
                                 </a>
                             
                         </div>
@@ -910,9 +990,67 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/12/18/20211217-ping-lun-gong-neng-tian-jia/">
+                    <div class="card-image">
+                        
+                        <img src="/blogimg/blog1.jpg" class="responsive-img" alt="使用Valine为你的Hexo个人博客添加评论功能">
+                        
+                        <span class="card-title">使用Valine为你的Hexo个人博客添加评论功能</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Valine/">
+                        <span class="chip bg-color">Valine</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">个人博客</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/12/09/20211209-wang-zhan-da-jian-ji-lu/">
                     <div class="card-image">
@@ -929,9 +1067,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -957,56 +1095,6 @@
                     
                     <a href="/tags/GitHub-Pages/">
                         <span class="chip bg-color">GitHub Pages</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/12/04/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-04
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
                 </div>
