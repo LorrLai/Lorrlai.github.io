@@ -461,6 +461,10 @@
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>需要将按照之前设置的<code>id</code>进行绑定，函数名可以自定义。</p>
+<blockquote>
+<p>“$”为指标识符，代表JQuery对象，目的是让浏览器知道这是JQuery。</p>
+<p>“$()”是一个函数，等同于JQuery()，可在括号内传参数，传参后可获取元素。</p>
+</blockquote>
 <h3 id="3-1-点击后导出"><a href="#3-1-点击后导出" class="headerlink" title="3.1 点击后导出"></a>3.1 点击后导出</h3><p><code>index.html</code>页面中增加一个<code>&lt;a&gt;</code>标签（用其他的当然也可以），并绑定点击事件为导出函数<code>exportToWord</code>：</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">exportToWord</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>点击导出<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -1310,17 +1314,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/28/jquery-shi-xian-wang-ye-nei-rong-dao-chu-wei-word-wen-dang/">
+                <a href="/2021/12/29/shi-yong-jquery-huo-qu-hou-duan-shu-ju-de-feng-zhuang-fang-fa/">
                     <div class="card-image">
                         
-                        <img src="/blogimg/blog3.jpg" class="responsive-img" alt="JQuery实现网页内容导出为word文档">
                         
-                        <span class="card-title">JQuery实现网页内容导出为word文档</span>
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="使用JQuery获取后端数据的封装方法">
+                        
+                        <span class="card-title">使用JQuery获取后端数据的封装方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1330,9 +1334,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-29
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1345,7 +1349,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1359,6 +1362,10 @@
                     
                     <a href="/tags/JQuery/">
                         <span class="chip bg-color">JQuery</span>
+                    </a>
+                    
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
                     </a>
                     
                 </div>
@@ -1413,12 +1420,12 @@
                         <span class="chip bg-color">HTML5</span>
                     </a>
                     
-                    <a href="/tags/Element-ui/">
-                        <span class="chip bg-color">Element-ui</span>
-                    </a>
-                    
                     <a href="/tags/Vue/">
                         <span class="chip bg-color">Vue</span>
+                    </a>
+                    
+                    <a href="/tags/Element-ui/">
+                        <span class="chip bg-color">Element-ui</span>
                     </a>
                     
                 </div>
@@ -1568,7 +1575,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9k</span>
+                        class="white-color">11.1k</span>
             
             
             
