@@ -22,9 +22,9 @@
             
             <tag> HTML5 </tag>
             
-            <tag> Vue </tag>
-            
             <tag> JQuery </tag>
+            
+            <tag> Vue </tag>
             
         </tags>
       
@@ -78,9 +78,9 @@
             
             <tag> HTML5 </tag>
             
-            <tag> Element-ui </tag>
-            
             <tag> Vue </tag>
+            
+            <tag> Element-ui </tag>
             
         </tags>
       
@@ -197,9 +197,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>friends</title>
+      <link href="/friends/index.html"/>
+      <url>/friends/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -208,9 +208,9 @@
     
     
     <entry>
-      <title>friends</title>
-      <link href="/friends/index.html"/>
-      <url>/friends/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
