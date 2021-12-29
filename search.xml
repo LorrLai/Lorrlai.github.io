@@ -13,14 +13,12 @@
       
       <categories>
           
-          <category> 技术 </category>
+          <category> 前端开发 </category>
           
       </categories>
       
       
         <tags>
-            
-            <tag> 前端开发 </tag>
             
             <tag> HTML5 </tag>
             
@@ -44,14 +42,12 @@
       
       <categories>
           
-          <category> 技术 </category>
+          <category> 前端开发 </category>
           
       </categories>
       
       
         <tags>
-            
-            <tag> 前端开发 </tag>
             
             <tag> HTML5 </tag>
             
@@ -73,14 +69,12 @@
       
       <categories>
           
-          <category> 技术 </category>
+          <category> 前端开发 </category>
           
       </categories>
       
       
         <tags>
-            
-            <tag> 前端开发 </tag>
             
             <tag> HTML5 </tag>
             
@@ -104,7 +98,7 @@
       
       <categories>
           
-          <category> 技术 </category>
+          <category> 个人博客 </category>
           
       </categories>
       
@@ -115,7 +109,7 @@
             
             <tag> Valine </tag>
             
-            <tag> 个人博客 </tag>
+            <tag> 评论功能 </tag>
             
         </tags>
       
@@ -133,7 +127,7 @@
       
       <categories>
           
-          <category> 技术 </category>
+          <category> 个人博客 </category>
           
       </categories>
       
@@ -142,9 +136,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 个人博客 </tag>
-            
             <tag> GitHub Pages </tag>
+            
+            <tag> 网站搭建 </tag>
             
         </tags>
       
@@ -181,9 +175,9 @@
     
     
     <entry>
-      <title>friends</title>
-      <link href="/friends/index.html"/>
-      <url>/friends/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -203,9 +197,9 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -214,9 +208,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>friends</title>
+      <link href="/friends/index.html"/>
+      <url>/friends/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
