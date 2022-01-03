@@ -5,11 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="使用Valine为你的Hexo个人博客添加评论功能, LorrBlog">
-    <meta name="description" content="使用Valine为你的Hexo个人博客添加评论功能
+    <meta name="description" content="使用Valine为你的个人博客添加评论功能
 一个好的博客怎么能没有评论功能呢，拖了几天终于能把评论模块安排上了o(￣︶￣)o
-本文使用Valine在基于hexo搭建的个人博客上添加评论功能
+本文使用Valine在基于hexo搭建的个人博客上添加评论功能。
 
-一、博客评论模块选择关于评论模块有很多选">
+一、博客评论模块选择关于评论模块有很多选择，因">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -406,9 +406,9 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="使用Valine为你的Hexo个人博客添加评论功能"><a href="#使用Valine为你的Hexo个人博客添加评论功能" class="headerlink" title="使用Valine为你的Hexo个人博客添加评论功能"></a>使用Valine为你的Hexo个人博客添加评论功能</h1><blockquote>
+                <h1 id="使用Valine为你的个人博客添加评论功能"><a href="#使用Valine为你的个人博客添加评论功能" class="headerlink" title="使用Valine为你的个人博客添加评论功能"></a>使用Valine为你的个人博客添加评论功能</h1><blockquote>
 <p>一个好的博客怎么能没有评论功能呢，拖了几天终于能把评论模块安排上了o(<em>￣︶￣</em>)o</p>
-<p>本文使用Valine在基于hexo搭建的个人博客上添加评论功能</p>
+<p>本文使用Valine在基于hexo搭建的个人博客上添加评论功能。</p>
 </blockquote>
 <h2 id="一、博客评论模块选择"><a href="#一、博客评论模块选择" class="headerlink" title="一、博客评论模块选择"></a>一、博客评论模块选择</h2><p>关于评论模块有很多选择，因为博主也没有一一用过，只能通过网络搜索来寻找一个简单好用的，以下是一位博主对于一些评论模块的评价：</p>
 <blockquote>
@@ -427,7 +427,7 @@
 </blockquote>
 <p>这就相当于你将你所有的公共仓库授权给了评论者，删库跑路不在话下。也就是说拿到你的授权 Token 的人，可以将你的 GitHub 公共仓库删空（这是github权限分的不够细的锅），如果恶意攻击者想获取使用者的AccessToken，只需要在代码中加上一个 ajax 请求即可。（根据v2ex网友的评论，如果网站自行修改了 gitalk.js 脚本或者反代了github api，就很容易拿到你的 Token ）</p>
 <p>原贴地址：<a target="_blank" rel="noopener" href="https://www.v2ex.com/t/535608">https://www.v2ex.com/t/535608</a></p>
-<p>因此，在冲浪了一个早上并参观了无数前辈的博客后，以及各种踩坑安全问题之后，选择使用<code>Valine</code>模块为我的博客添加评论功能，这是一款基于LeanCloud开发的快速、简洁且高效的无后端评论系统，内置微博表情也可以自定义添加表情。当然，放弃了后端是有一些弊端的，不过估计也不会有几个评论，所以还是选择个稳当简单的。想要鱼和熊掌兼得就得看大佬自己发挥了_(:<em>」∠)</em> </p>
+<p>因此，在冲浪了一个早上并参观了无数前辈的博客后，以及各种踩坑安全问题之后，选择使用<code>Valine</code>模块为我的博客添加评论功能，这是一款基于LeanCloud开发的快速、简洁且高效的无后端评论系统，内置微博表情，也可以自定义添加表情。当然，放弃了后端是有一些弊端的，不过估计也不会有几个评论，所以还是选择个稳当简单的。想要鱼和熊掌兼得就得看大佬自己发挥了_(:<em>」∠)</em> </p>
 <p>Valine中文文档：<a target="_blank" rel="noopener" href="https://valine.js.org/">https://valine.js.org</a></p>
 <p>这是Valine评论模块的效果：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211217150753371.png" alt="image-20211217150753371"></p>
@@ -460,7 +460,7 @@
     </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>因为博主是用基于hexo的主题进行开发的，可以直接在主题的配置文件<code>_config.yml</code>中填写相关参数：（主题为闪烁之狐大佬开发的<code>Matery</code>）</p>
+<p>因为博主是用基于hexo的主题进行开发的，可以直接在主题的配置文件<code>/themes/hexo-theme-matery/_config.yml</code>中填写相关参数：（主题为闪烁之狐大佬开发的<code>Matery</code>）</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">valine</span><span class="token punctuation">:</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 是否开启</span>
   <span class="token key atrule">appId</span><span class="token punctuation">:</span> <span class="token comment"># APP_ID</span>
@@ -958,7 +958,7 @@
 </div>
 
 <script src="/libs/valine/av-min.js"></script>
-<script src="/libs/valine/Valine.min.js"></script>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
     new Valine({
         el: '#vcomments',
@@ -970,7 +970,34 @@
         avatar: 'mm',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '一起聊天吧~'
+        placeholder: '一起聊天吧~',
+        // 设置Bilibili表情包地址
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+            "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+            "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+            "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+            "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+            "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+            "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+            "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+            "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+            "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+            "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+            "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+            "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+            "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+            "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+            "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+            "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+            "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+            "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+            "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+            "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+            "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+            // ... 更多表情
+        },
     });
 </script>
 
@@ -1031,12 +1058,12 @@
                         <span class="chip bg-color">HTML5</span>
                     </a>
                     
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
-                    </a>
-                    
                     <a href="/tags/Element-ui/">
                         <span class="chip bg-color">Element-ui</span>
+                    </a>
+                    
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
                     </a>
                     
                 </div>
@@ -1234,7 +1261,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <a href="/about" target="_blank">LorraineLai</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -1242,7 +1269,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">11.1k</span>
+                        class="white-color">11.8k</span>
             
             
             

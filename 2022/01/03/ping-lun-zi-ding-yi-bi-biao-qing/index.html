@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, LorrBlog">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Matery主题为Valine评论系统自定义表情, LorrBlog">
+    <meta name="description" content="Matery主题为Valine评论系统自定义表情
+新的博客优化目标已经出现，那就是为评论系统添加自定义表情，默认的微博表情怎么够用呢！
+因为自定义表情功能只有版本1.4.5以上才有，而Matery主题使用的是版本1.3.10。而不同的主题替">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | LorrBlog</title>
+    <title>Matery主题为Valine评论系统自定义表情 | LorrBlog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -224,12 +226,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/blogimg/blog1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Matery主题为Valine评论系统自定义表情</h1>
                 </div>
             </div>
         </div>
@@ -349,6 +351,14 @@
                                 <span class="chip bg-color">Hexo</span>
                             </a>
                         
+                            <a href="/tags/Valine/">
+                                <span class="chip bg-color">Valine</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">
+                                <span class="chip bg-color">评论功能</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -357,8 +367,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                技术
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                个人博客
                             </a>
                         
                     </div>
@@ -370,7 +380,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-04
+                    2022-01-03
                 </div>
                 
 
@@ -394,19 +404,55 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="Matery主题为Valine评论系统自定义表情"><a href="#Matery主题为Valine评论系统自定义表情" class="headerlink" title="Matery主题为Valine评论系统自定义表情"></a>Matery主题为Valine评论系统自定义表情</h1><blockquote>
+<p>新的博客优化目标已经出现，那就是为评论系统添加自定义表情，默认的微博表情怎么够用呢！</p>
+<p>因为自定义表情功能只有<code>版本1.4.5</code>以上才有，而Matery主题使用的是<code>版本1.3.10</code>。而不同的主题替换Valine版本的方法是不同的。本篇文章只针对Matery主题中的Valine评论系统添加自定义表情提供教程。</p>
+<p>文章中使用的是<code>版本1.4.16</code>。</p>
+</blockquote>
+<p>如果还没有Valine评论功能，可以查看我的另一篇文章<a target="_blank" rel="noopener" href="https://lorrlai.github.io/2021/12/18/20211217-ping-lun-gong-neng-tian-jia/">使用Valine为你的个人博客添加评论功能</a></p>
+<p>Valine官方文档<a target="_blank" rel="noopener" href="https://valine.js.org/emoji.html">自定义表情</a></p>
+<h2 id="1-Matery主题下的Valine版本更新"><a href="#1-Matery主题下的Valine版本更新" class="headerlink" title="1.Matery主题下的Valine版本更新"></a>1.Matery主题下的Valine版本更新</h2><p>Matery主题下更新Valine的版本是非常容易的，只需要在<code>/themes/hexo-theme-matery/_config.yml</code>文件中进行修改即可。修改<code>libs:</code>下的<code>js:</code>中对Valine的配置：</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">valine</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//unpkg.com/valine/dist/Valine.min.js 
+<span class="token comment"># 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  </span>
+<span class="token comment"># 默认为 /libs/valine/Valine.min.js</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>按照上述修改的话，会让Valine一直保持在最新的版本。若想固定在当前版本，则可在浏览器中打开<a target="_blank" rel="noopener" href="https://unpkg.com/valine/dist/Valine.min.js">js链接</a>，将里面的内容复制粘贴到<code>/.deploy_git/libs/valine/Valine.min.js</code>文件中（这个文件不在主题文件中，而是在你最开始按照hexo网页的根目录下），那么配置也要相应地改回默认地址。</p>
+<h2 id="2-添加自定义表情包"><a href="#2-添加自定义表情包" class="headerlink" title="2.添加自定义表情包"></a>2.添加自定义表情包</h2><p>接下来就用官方文档中提供的bilibili表情包来进行一下测试。</p>
+<p>需要找到<code>/themes/hexo-theme-matery/layout/_partial</code>目录下的最后一个文件<code>valine.ejs</code>，在大约249行找到<code>new Valine</code>，在其中添加以下<code>两项</code>内容：</p>
+<p>设置表情包地址</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 设置Bilibili表情包地址</span>
+emojiCDN<span class="token operator">:</span> <span class="token string">'//i0.hdslb.com/bfs/emote/'</span><span class="token punctuation">,</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>确定表情title和图片映射</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"> <span class="token comment">// 表情title和图片映射</span>
+emojiMaps<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+ 	<span class="token string">"tv_doge"</span><span class="token operator">:</span> <span class="token string">"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png"</span><span class="token punctuation">,</span>	
+    <span class="token string">"tv_亲亲"</span><span class="token operator">:</span> <span class="token string">"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png"</span><span class="token punctuation">,</span>	
+    <span class="token string">"tv_偷笑"</span><span class="token operator">:</span> <span class="token string">"bb690d4107620f1c15cff29509db529a73aee261.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_再见"</span><span class="token operator">:</span> <span class="token string">"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png"</span><span class="token punctuation">,</span>
+    <span class="token string">"tv_冷漠"</span><span class="token operator">:</span> <span class="token string">"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png"</span><span class="token punctuation">,</span>
+   	<span class="token string">"tv_发怒"</span><span class="token operator">:</span> <span class="token string">"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_发财"</span><span class="token operator">:</span> <span class="token string">"34db290afd2963723c6eb3c4560667db7253a21a.png"</span><span class="token punctuation">,</span>
+ 	<span class="token string">"tv_可爱"</span><span class="token operator">:</span> <span class="token string">"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_吐血"</span><span class="token operator">:</span> <span class="token string">"09dd16a7aa59b77baa1155d47484409624470c77.png"</span><span class="token punctuation">,</span>
+   	<span class="token string">"tv_呆"</span><span class="token operator">:</span> <span class="token string">"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png"</span><span class="token punctuation">,</span>
+   	<span class="token string">"tv_呕吐"</span><span class="token operator">:</span> <span class="token string">"9f996894a39e282ccf5e66856af49483f81870f3.png"</span><span class="token punctuation">,</span>
+   	<span class="token string">"tv_困"</span><span class="token operator">:</span> <span class="token string">"241ee304e44c0af029adceb294399391e4737ef2.png"</span><span class="token punctuation">,</span>
+   	<span class="token string">"tv_坏笑"</span><span class="token operator">:</span> <span class="token string">"1f0b87f731a671079842116e0991c91c2c88645a.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_大佬"</span><span class="token operator">:</span> <span class="token string">"093c1e2c490161aca397afc45573c877cdead616.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_大哭"</span><span class="token operator">:</span> <span class="token string">"23269aeb35f99daee28dda129676f6e9ea87934f.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_委屈"</span><span class="token operator">:</span> <span class="token string">"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_害羞"</span><span class="token operator">:</span> <span class="token string">"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_尴尬"</span><span class="token operator">:</span> <span class="token string">"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_微笑"</span><span class="token operator">:</span> <span class="token string">"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png"</span><span class="token punctuation">,</span>
+   	<span class="token string">"tv_思考"</span><span class="token operator">:</span> <span class="token string">"90cf159733e558137ed20aa04d09964436f618a1.png"</span><span class="token punctuation">,</span>
+  	<span class="token string">"tv_惊吓"</span><span class="token operator">:</span> <span class="token string">"0d15c7e2ee58e935adc6a7193ee042388adc22af.png"</span><span class="token punctuation">,</span>
+	<span class="token comment">// ... 更多表情</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>之后就可以生成静态文章看看效果了，效果图如下：<br><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20211230171354386.png" alt="image-20211230171354386"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/06/19/hexo/matery-zhu-ti-valine-ping-lun-xi-tong/">https://fenghen0918.github.io/2020/06/19/hexo/matery-zhu-ti-valine-ping-lun-xi-tong/</a></p>
+<h2 id="文章更新记录"><a href="#文章更新记录" class="headerlink" title="文章更新记录"></a>文章更新记录</h2><p>2021.12.30 文章完成并发布</p>
 
                 
             </div>
@@ -423,7 +469,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Other</a>
+                    <a href="/about" rel="external nofollow noreferrer">LorraineLai</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -433,7 +479,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/12/04/hello-world/">http://example.com/2021/12/04/hello-world/</a>
+                    <a href="http://example.com/2022/01/03/ping-lun-zi-ding-yi-bi-biao-qing/">http://example.com/2022/01/03/ping-lun-zi-ding-yi-bi-biao-qing/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -446,7 +492,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Other</a>
+                    <a href="/about" target="_blank">LorraineLai</a>
                     !
                 </span>
             </div>
@@ -473,6 +519,14 @@
                             
                                 <a href="/tags/Hexo/">
                                     <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/Valine/">
+                                    <span class="chip bg-color">Valine</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">
+                                    <span class="chip bg-color">评论功能</span>
                                 </a>
                             
                         </div>
@@ -937,16 +991,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/12/09/20211209-wang-zhan-da-jian-ji-lu/">
+                <a href="/2022/01/03/ping-lun-zi-ding-yi-bi-biao-qing/">
                     <div class="card-image">
                         
-                        <img src="/blogimg/blog0.jpg" class="responsive-img" alt="Hexo个人博客搭建教程">
+                        <img src="/blogimg/blog1.jpg" class="responsive-img" alt="Matery主题为Valine评论系统自定义表情">
                         
-                        <span class="card-title">Hexo个人博客搭建教程</span>
+                        <span class="card-title">Matery主题为Valine评论系统自定义表情</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -956,9 +1011,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -971,6 +1026,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -978,12 +1034,12 @@
                         <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/GitHub-Pages/">
-                        <span class="chip bg-color">GitHub Pages</span>
+                    <a href="/tags/Valine/">
+                        <span class="chip bg-color">Valine</span>
                     </a>
                     
-                    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">网站搭建</span>
+                    <a href="/tags/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">
+                        <span class="chip bg-color">评论功能</span>
                     </a>
                     
                 </div>
@@ -994,16 +1050,15 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/04/hello-world/">
+                <a href="/2021/12/29/shi-yong-jquery-huo-qu-hou-duan-shu-ju-de-feng-zhuang-fang-fa/">
                     <div class="card-image">
                         
+                        <img src="/blogimg/blog4.jpg" class="responsive-img" alt="使用JQuery获取后端数据的封装方法">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">使用JQuery获取后端数据的封装方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1014,26 +1069,33 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="post-category">
+                                    前端开发
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/HTML5/">
+                        <span class="chip bg-color">HTML5</span>
+                    </a>
+                    
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
+                    </a>
+                    
+                    <a href="/tags/JQuery/">
+                        <span class="chip bg-color">JQuery</span>
                     </a>
                     
                 </div>
