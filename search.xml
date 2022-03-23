@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>需求文档v1.0</title>
+      <link href="/2022/03/23/xu-qiu-wen-dang/"/>
+      <url>/2022/03/23/xu-qiu-wen-dang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="需求文档v1-0"><a href="#需求文档v1-0" class="headerlink" title="需求文档v1.0"></a>需求文档v1.0</h1><h3 id="一、项目主题"><a href="#一、项目主题" class="headerlink" title="一、项目主题"></a>一、项目主题</h3><p>网络流量可视化展示大屏</p><p>关键词：<code>可视化</code>、<code>网络流量模拟</code>、<code>3D地图</code>、<code>大屏展示</code>、<code>多视图可交互</code></p><h3 id="二、背景"><a href="#二、背景" class="headerlink" title="二、背景"></a>二、背景</h3><p>针对特定场景，结合3D地图实时监测网络流量，并将流量按不同的维度进行可交互的多视图可视化展示，以便分析网络流量的特点，发现数据的内在规律。拟采用虚构的高校校区分布和高校3D模型来作为应用场景。</p><h3 id="三、项目实现流程"><a href="#三、项目实现流程" class="headerlink" title="三、项目实现流程"></a>三、项目实现流程</h3><p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/image-20220323143526720.png" alt="流程图"></p><h4 id="关键流程1：流量的获取"><a href="#关键流程1：流量的获取" class="headerlink" title="关键流程1：流量的获取"></a>关键流程1：流量的获取</h4><p>模拟生成网络流量，需要对真实的流量进行模拟，体现出一些特征（周期性、峰值等）。</p><blockquote><p>p.s.可以使用第三方开源工具实现</p></blockquote><h4 id="关键流程2：数据处理"><a href="#关键流程2：数据处理" class="headerlink" title="关键流程2：数据处理"></a>关键流程2：数据处理</h4><p>将模拟的网络流量数据进行处理，获得7个主要的特征维度：源地址 (srcIP)、源端口 (srcPort)、目的地址 (destIP)、目的端口 (destPort)、连接数 (link)、字节数 (destTotalBytes) 和包数 (destPackets)</p><h4 id="关键流程3：可视化视图（重点）"><a href="#关键流程3：可视化视图（重点）" class="headerlink" title="关键流程3：可视化视图（重点）"></a>关键流程3：可视化视图（重点）</h4><h5 id="1-周期性视图（重中之重）"><a href="#1-周期性视图（重中之重）" class="headerlink" title="1.周期性视图（重中之重）"></a>1.周期性视图（重中之重）</h5><p>参考论文：<a href="https://www.researchgate.net/profile/Christian-Tominski/publication/230887318_Enhanced_Interactive_Spiral_Display/links/0046351dac663a9c6d000000/Enhanced-Interactive-Spiral-Display.pdf">Enhanced_Interactive_Spiral_Displa</a>用螺旋线来展示周期性特征。</p><h5 id="2-基于特征（源地址、目的地址等）的聚类视图"><a href="#2-基于特征（源地址、目的地址等）的聚类视图" class="headerlink" title="2.基于特征（源地址、目的地址等）的聚类视图"></a>2.基于特征（源地址、目的地址等）的聚类视图</h5><h5 id="3-基于时间的流量大小视图"><a href="#3-基于时间的流量大小视图" class="headerlink" title="3.基于时间的流量大小视图"></a>3.基于时间的流量大小视图</h5><blockquote><p>p.s.可以对以上的视图进行补充</p></blockquote><h4 id="关键流程4：多视图"><a href="#关键流程4：多视图" class="headerlink" title="关键流程4：多视图"></a>关键流程4：多视图</h4><p>在流程3中得到的多个针对不同特征的可视化单一视图可以通过Web前端进行交互。</p><h4 id="关键流程5：网络流量实时检测地图"><a href="#关键流程5：网络流量实时检测地图" class="headerlink" title="关键流程5：网络流量实时检测地图"></a>关键流程5：网络流量实时检测地图</h4><p>这部分也是前端的主要界面，结合二维地图和三维地图展示。一开始给一个总览的地图，通过二维显示，通常高校都有多个校区，这部分就显示校区的大概位置。示例：</p><blockquote><p>在示例的基础上需要增加实时的校区间流量结点链路图</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/%E5%8A%A8%E7%94%BB1.gif" alt="示例1"></p><p>然后可以进入到具体每一个校区，具体校区中展示3D模型地图，同时展示更加细节的流量结点链路图。示例：</p><p><img src="https://cdn.jsdelivr.net/gh/LorrLai/pics@master//blogpics/%E5%8A%A8%E7%94%BB2.gif" alt="示例2"></p><blockquote><p>以上示例均参考：<a href="http://finemaxdemo.fanruan.com/">http://finemaxdemo.fanruan.com/</a>中<code>FVS大屏编辑模式插件</code>-&gt;<code>智慧小镇</code></p></blockquote><p>在进入到具体校区（3D地图）后，可以点击查看关键结点的数据（如关键结点的网络端口的请求和响应次数）。类似于示例2中的结点上的框。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Matery主题为Valine评论系统自定义表情</title>
       <link href="/2022/01/03/ping-lun-zi-ding-yi-bi-biao-qing/"/>
       <url>/2022/01/03/ping-lun-zi-ding-yi-bi-biao-qing/</url>
@@ -215,9 +228,9 @@
     
     
     <entry>
-      <title>friends</title>
-      <link href="/friends/index.html"/>
-      <url>/friends/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -226,9 +239,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>friends</title>
+      <link href="/friends/index.html"/>
+      <url>/friends/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
